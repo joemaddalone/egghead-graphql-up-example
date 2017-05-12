@@ -1,0 +1,11 @@
+type Person {
+	id: ID!,
+	name: String!,
+	tasks: [Task!]! @relation(name: "PersonTask")
+}
+
+type Task {
+	id: ID!,
+	description: String!,
+	person: Person @relation(name: "PersonTask")
+}
