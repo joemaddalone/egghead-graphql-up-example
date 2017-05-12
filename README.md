@@ -6,7 +6,7 @@ npm i graphql-up -g
 graphql-up tasks.schema
 ```
 
-### 1. Connect locally 
+### 2. Connect locally 
 
 * copy `Simple API` endpoint
 * run `npm install`
