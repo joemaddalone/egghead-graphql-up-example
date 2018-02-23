@@ -1,11 +1,11 @@
-type Person {
-	id: ID!,
+type Person @model{
+	id: ID! @isUnique,
 	name: String!,
 	tasks: [Task!]! @relation(name: "PersonTask")
 }
 
-type Task {
-	id: ID!,
+type Task @model{
+	id: ID! @isUnique,
 	description: String!,
 	person: Person @relation(name: "PersonTask")
 }
